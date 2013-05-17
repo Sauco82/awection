@@ -7,7 +7,7 @@ $ ->
 
   class window.Bids extends Backbone.Collection
     model: Bid
-    url:  'http://localhost:3000/bids'
+    url:  '/bids'
 
 
   class window.BidView extends Backbone.View

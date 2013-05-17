@@ -1,33 +1,110 @@
-<!-- Part 1: Wrap all page content here -->
-<div id="wrap">
 
-  <!-- Begin page content -->
-  <div class="container">
-    <div class="page-header">
-      <i class="icon-time icon-4x"></i>
-      <span id="clock"></span>
-    </div>
+<div class="accommodation">
+  <h1>
+    Club Magic Life Kalawy Imperial 
+    <i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i>
+  </h1>
+  <h3>Egypte - Rode Zee - Port Safaga</h3>
+  <ul class="accommodation_menu">
+    <li class="current"><a href="#">The place</a></li>
+    <li><a href="#">Map</a></li>
+    <li><a href="#">Description</a></li>
+    <li><a href="#">Photos</a></li>
+  </ul>
 
-    <div id="bidArea">
-
-      <!-- Bidding input -->
-      <div class="bidding-container">
-        <input type="text" id="bid">
-        <button class="btn btn-success" type="button" id="submitBid">BID!</button>
-      </div>
-
-
-      <!-- Bid History -->
-      <h1 style="text-align:center;"><small>History</small></h1>
-      <ul class="nav nav-tabs nav-stacked" id="bids"></ul>
-    </div>
+  <div class="accommodation_content">
+    <object width="853" height="480">
+      <param name="movie"
+             value="https://www.youtube.com/v/M7lc1UVf-VE?version=3&autoplay=0"></param>
+      <param name="allowScriptAccess" value="always"></param>
+      <embed src="https://www.youtube.com/v/ThG9qx9AiKs?version=3&autoplay=0"
+             type="application/x-shockwave-flash"
+             allowscriptaccess="always"
+             width="853" height="480"></embed>
+    </object>
   </div>
-
-  <div id="push"></div>
+  <div class="accommodation_highlights">
+    <h3>The Trip</h3>
+    <ul>
+      <li>8 dagen</li>
+      <li>2 adults 1 child</li>
+      <li>from Amsterdam Schipol</li>
+      <li>11 Augustus 2013 16:00</li>
+      <li>5 hours flight</li>
+      <li>7 days duration</li>
+    </ul>
+    <h3>Rating</h3>
+    <div class="zoover">
+      <p class="rating">9.5</p>
+      <p class="reviews">17 reviews</p>
+    </div>
+    <h3>Wheater</h3>
+    <table>
+      <tbody>
+        <tr>
+          <td class="sunny">sunny</td>
+          <td class="temperature"> <span class="temperature_color_warm"></span> 30&deg; - 15&deg;</td>
+          <td class="date">11-03-2014</td>
+        </tr>
+        <tr>
+          <td class="sunny">sunny</td>
+          <td class="temperature"> <span class="temperature_color_warm"></span> 30&deg; - 15&deg;</td>
+          <td class="date">11-03-2014</td>
+        </tr>
+        <tr>
+          <td class="cloudy">cloudy</td>
+          <td class="temperature"> <span class="temperature_color_medium"></span> 20&deg; - 13&deg;</td>
+          <td class="date">11-03-2014</td>
+        </tr>
+        <tr>
+          <td class="sunny">sunny</td>
+          <td class="temperature"> <span class="temperature_color_warm"></span> 30&deg; - 15&deg;</td>
+          <td class="date">11-03-2014</td>
+        </tr>
+        <tr>
+          <td class="sunny">sunny</td>
+          <td class="temperature"> <span class="temperature_color_warm"></span> 30&deg; - 15&deg;</td>
+          <td class="date">11-03-2014</td>
+        </tr>
+        <tr>
+          <td class="sunny">sunny</td>
+          <td class="temperature"> <span class="temperature_color_warm"></span> 30&deg; - 15&deg;</td>
+          <td class="date">11-03-2014</td>
+        </tr>
+        <tr>
+          <td class="sunny">sunny</td>
+          <td class="temperature"> <span class="temperature_color_warm"></span> 30&deg; - 15&deg;</td>
+          <td class="date">11-03-2014</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </div>
 
-<div id="footer">
-  <div class="container">
-    <p class="muted credit">There's not a highest bid yet.</p>
+
+<div class="bid_bar">
+  <div class="bid_center">
+    <span id="clock"></span>
+    <div class="current_bid">
+      <p>
+        Current bid:
+        <span>&euro; 239</span>
+      </p>    
+    </div>
+    <div class="make_bid">
+      <input type="text" id="bid">
+      <button type="button" id="submitBid">Beat the Bid!</button>
+    </div>
   </div>
+</div>
+
+
+<h2><small>History</small></h2>
+<ul id="bids"></ul>
+
+
+<div id="footer">
+    <span class="hero"></span>
+    <p class="share"></p>
+    <p>There's not a highest bid yet.</p>
 </div>
