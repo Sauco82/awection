@@ -17,9 +17,10 @@ $ ->
 
     render: ->
       $(@el).html """
-                  <p class="muted credit">
-                    The current highest bid placed is <strong>#{@model.get 'amount'} &euro;</strong> by #{@model.get 'user'}
+                  <p>
+                    Current bid:
                   </p>
+                  <strong>&euro;#{@model.get 'amount'}</strong>
                   """
       @
 
@@ -43,7 +44,7 @@ $ ->
     renderBid: (topBid) ->
       topBidView = new TopBidView model: topBid
 
-      $('#footer').html topBidView.render().el
+      $('#current_bid').html topBidView.render().el
 
 
   topBidsView = new TopBidsView
